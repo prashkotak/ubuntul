@@ -1,0 +1,23 @@
+{
+    "family": "sndk",
+    "containerDefinitions": [
+        {
+            "name": "sndk",
+            "image": "554906049655.dkr.ecr.us-west-2.amazonaws.com/hello-world",
+            "cpu": 10,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 8080
+                }
+            ],
+            "entryPoint": [
+                "/usr/sbin/apache2",
+                "-D",
+                "FOREGROUND"
+            ],
+            "essential": true
+        }
+    ]
+}
