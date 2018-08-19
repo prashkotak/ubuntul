@@ -9,6 +9,9 @@ pipeline {
 				label 'ansible-server'
 				additionalBuildArgs  '--build-arg version=1.0.2'
 				}
+			steps {
+				echo 'Image build sucessfully'
+			}
 			}		
 		}
 	}	
